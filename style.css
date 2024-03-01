@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2,50VW);
+}
+.form {
+  display: flex;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  flex-direction: column;
+  padding: 50px 0 0 0px;
+}
+
+.form img {
+  width: 200px;
+  height: 100px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+.form2 img {
+  width: 100%;
+}
+.form2 {
+  
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(140, 176, 234) 100%
+  );
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 10px;
+}
+.info input {
+  border-radius: 7px;
+  height: 40px;
+  width: 450px;
+  border: 1px solid rgb(189, 189, 189);
+  padding-left: 7px;
+}
+
+.info input:hover {
+  border-color: rgb(83, 83, 247);
+}
+
+.logi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.logi input {
+  background-color: blue;
+  color: aliceblue;
+  height: 40px;
+  width: 450px;
+  border: 1px solid;
+  border-radius: 7px;
+  margin-top: 40px;
+}
+
+.logi input:hover {
+  background-color: rgb(62, 62, 250);
+  cursor: pointer;
+}
+.logi a {
+  text-decoration: none;
+}
+
+label::before {
+  content: "* ";
+  color: red;
+  position: relative;
+  top: 3px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.header h4 {
+  color: rgb(80, 80, 80);
+}
+
+@media screen and (0 < width <634px) 
+{
+  .container{
+    grid-template-columns: 1fr;
+  }
+  .form2 {
+    display: none;
+  }
+  .form{
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: center;
+  }
+
+  
+}
